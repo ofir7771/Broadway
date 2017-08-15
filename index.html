@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Broadway</title>
-    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
   </head>
   <body>
-    <div class="header">
-      <h1>Broadway Design</h1>
-        <nav>
+    <div id="header">
+      <h1 id="main-header">Broadway Design</h1>
+        <nav id="page-nav">
           <p><a href="#header">Home</a></p>
           <p><a href="#process">About</a></p>
           <p><a href="#work">Work</a></p>
@@ -17,37 +17,45 @@
         </nav>
      </div>
      <div id="process">
-       <h3>Our Process</h3>
-          <img src="file:///C:/Users/yael/Desktop/OFIR/Projects/Broadway/resources/images/identify.svg" alt="identify logo"/>
-          <p>Identify</p>
-          <p>We focus on the most important details</p>
-          <img src="file:///C:/Users/yael/Desktop/OFIR/Projects/Broadway/resources/images/understand.svg" alt="understand logo"/>
-          <p>Understand</p>
-          <p>We study our projects inside and out</p>
-          <img src="file:///C:/Users/yael/Desktop/OFIR/Projects/Broadway/resources/images/execute.svg" alt="execute logo"/>
-          <p>Execute</p>
-          <p>We put everything we have into our work</p>
-     </div> <!--closing "process" id-->
+       <h2 class="subtitle">Our Process</h2>
+       <div class="sections">
+         <img src="./resources/images/identify.svg" alt="identify logo"/>
+         <h5>Identify</h5>
+         <p>We focus on the most important details</p>
+         <img src="./resources/images/understand.svg" alt="understand logo"/>
+         <h5>Understand</h5>
+         <p>We study our projects inside and out</p>
+         <img src="./resources/images/execute.svg" alt="execute logo"/>
+         <h5>Execute</h5>
+         <p>We put everything we have into our work</p>
+       </div>
+     </div>
      <p id="midpage-title">Designed in New York</p>
-     <div id="about-us">
+     <div id="about-us" class="sections">
        <div id="work">
-         <p>Portfolio</p>
+         <h5>Portfolio</h5>
          <p>Coming Soon</p>
        </div>
        <div id="team">
-         <p>Team</p>
+         <h5>Team</h5>
          <p>We're Hiring!</p>
        </div>
        <div id="contact">
-         <p>Contact</p>
+         <h5>Contact</h5>
          <p>Phone: (555)-555-5555</p>
          <p>E-mail:test@example.com</p>
          <p>Twiter: @test</p>
        </div>
-     </div><!--closing id "about-us"-->
-     <div id="footer">
-        <p>&copy Broadway 2016 Home About Work Team Contact</p>
      </div>
+     <nav class="footer">
+        <p>&copy; Broadway 2016
+          <a class="footer" href="#header">Home</a>
+          <a class="footer" href="#about">About</a>
+          <a class="footer" href="#work">Work</a>
+          <a class="footer" href="#team">Team</a>
+          <a class="footer" href="#contact">Contact</a>
+        </p>
+     </nav>
 
   </body>
 </html>
